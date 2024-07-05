@@ -1,0 +1,147 @@
+@font-face {
+  font-family: 'SF Pro';
+  src: url('D:\\Download\\3rd Yr\\2nd Sem\\COMP 20133 Applications Development and Emerging Technologies\\Chat UI\\SF-Pro.dmg') format('opentype');
+  font-weight: 400;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'SF Pro';
+  src: url('D:\\Download\\3rd Yr\\2nd Sem\\COMP 20133 Applications Development and Emerging Technologies\\Chat UI\\SF-Pro.dmg') format('opentype');
+  font-weight: 500;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'SF Pro';
+  src: url('D:\\Download\\3rd Yr\\2nd Sem\\COMP 20133 Applications Development and Emerging Technologies\\Chat UI\\SF-Pro.dmg') format('opentype');
+  font-weight: 600;
+  font-style: normal;
+}
+
+body {
+  font-family: 'SF Pro', -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+  background-color: #E0E0E0;
+  color: #E0E0E0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  margin: 0;
+}
+
+.chat-container {
+  width: 700px;
+  height: 700px;
+  background-color: #1E1E1E;
+  border-radius: 20px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+  display: flex;
+  flex-direction: column;
+  overflow: hidden;
+}
+
+.chat-header {
+  background-color: #2C2C2C;
+  color: #E0E0E0;
+  padding: 10px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-size: 16px;
+  font-weight: 500;
+}
+
+.header-left {
+  flex: 1;
+  display: flex;
+  align-items: center;
+}
+
+.header-icons {
+  display: flex;
+  gap: 20px;
+  margin-right: 20px;
+}
+
+.header-icons i {
+  cursor: pointer;
+  color: #E0E0E0;
+}
+
+.chat-body {
+  flex: 1;
+  padding: 10px 15px;
+  overflow-y: auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  background-color: #1E1E1E;
+}
+
+.message {
+  max-width: 70%;
+  margin-bottom: 10px;
+  padding: 10px 15px;
+  border-radius: 20px;
+  position: relative;
+  display: inline-block;
+  word-wrap: break-word;
+  font-size: 17px;
+  line-height: 1.4;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.5);
+}
+
+.message.sent {
+  background-color: #3B3B3B;
+  color: #E0E0E0;
+  align-self: flex-end;
+  border-top-right-radius: 0;
+}
+
+.message.received {
+  background-color: #2C2C2C;
+  color: #E0E0E0;
+  align-self: flex-start;
+  border-top-left-radius: 0;
+}
+
+.chat-footer {
+  display: flex;
+  align-items: center;
+  padding: 10px;
+  background-color: #2C2C2C;
+  border-top: 1px solid #333;
+}
+
+#chat-input {
+  flex: 1;
+  padding: 10px;
+  border: 1px solid #333;
+  background-color: #1E1E1E;
+  color: #E0E0E0;
+  border-radius: 20px;
+  margin: 0 10px;
+  font-size: 17px;
+}
+
+#send-icon {
+  font-size: 20px;
+  color: #E0E0E0;
+  cursor: pointer;
+  margin-left: 10px;
+}
+
+.chat-footer i {
+  cursor: pointer;
+  font-size: 20px;
+  color: #E0E0E0;
+  margin-right: 10px;
+}
+
+.chat-header h2 {
+  font-size: 24px; 
+  color: #E0E0E0; 
+  margin: 0; 
+  font-weight: 700; 
+}
